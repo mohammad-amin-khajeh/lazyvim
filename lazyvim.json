@@ -1,6 +1,7 @@
 {
   "extras": [
     "lazyvim.plugins.extras.editor.inc-rename",
+    "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.util.dot"
