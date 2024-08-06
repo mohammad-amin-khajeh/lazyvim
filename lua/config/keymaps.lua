@@ -60,3 +60,6 @@ map("n", "<leader>lh", "<CMD>Lazy home<CR>", { desc = "lazy open" })
 -- use arrow keys for buffer navgiation
 map("n", "<s-left>", "<cmd>bp<cr>")
 map("n", "<s-right>", "<cmd>bn<cr>")
+
+-- close buffers easier
+map("n", "<a-x>", "<cmd>bdelete<cr>")
