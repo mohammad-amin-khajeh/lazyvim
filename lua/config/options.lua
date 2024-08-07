@@ -13,7 +13,3 @@ vim.opt.wrap = true
 
 -- don't show the last command
 vim.opt.showcmd = false
-
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.wildignore:append({ "*/node_modules/*" })
