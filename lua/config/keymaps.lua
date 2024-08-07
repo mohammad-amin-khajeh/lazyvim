@@ -12,7 +12,11 @@ map("n", "<C-u>", "<C-u>zz")
 map({ "n", "i", "v" }, "<C-q>", "<CMD>qa!<CR>")
 
 -- append the next line to the current line but don't change cursor position
-map("n", "J", "mzJ`z")
+map("n", "J", function()
+  local pos = vim.fn.getcurpos()
+  vim.cmd("norm! J")
+  vim.fn.setpos(".", pos)
+end)
 
 -- center the screen after going to the next/prev search result
 map("n", "n", "nzzzv")
