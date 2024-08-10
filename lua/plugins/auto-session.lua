@@ -11,7 +11,6 @@ return {
 
     opts = {
       -- log_level = "error",
-      auto_session_enabled = true,
       auto_save_enabled = true,
       session_lens = {
         buftypes_to_ignore = {}, -- list of buffer types what should not be deleted from current session
