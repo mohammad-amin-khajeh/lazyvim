@@ -27,12 +27,6 @@ map("n", "0", "_")
 map("n", "_", "0")
 map("n", "-", "0")
 
--- change pane size
-map("n", "<c-s-left>", "<c-w>>", { desc = "pane inscrease width" })
-map("n", "<c-s-right>", "<c-w><", { desc = "pane decrease width" })
-map("n", "<c-s-up>", "<c-w>+", { desc = "pane inscrease height" })
-map("n", "<c-s-down>", "<c-w>-", { desc = "pane decrease height" })
-
 -- make current file execultable
 map("n", "<leader>fx", '<CMD>!chmod +x "%"<CR>', { desc = "make file execultable" })
 
