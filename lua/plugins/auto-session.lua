@@ -3,7 +3,7 @@ return {
     "rmagatti/auto-session",
     keys = {
       { "<leader>qr", "<cmd>SessionRestore<cr>", desc = "auto-session restore" },
-      { "<leader>qs", "<cmd>SessionSave<cr>", desc = "auto-session save" },
+      { "<leader>qS", "<cmd>SessionSave<cr>", desc = "auto-session save" },
       { "<leader>qf", ":lua require('auto-session.session-lens').search_session()<CR>", desc = "auto-session lens" },
     },
 
