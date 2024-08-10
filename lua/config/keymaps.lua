@@ -47,6 +47,7 @@ map("n", "<a-g>", "*zz")
 map("n", "<a-f>", "#zz")
 
 -- lazy
+vim.keymap.del("n", "<leader>l")
 map("n", "<leader>lu", "<CMD>Lazy update<CR>", { desc = "lazy update plugins" })
 map("n", "<leader>ls", "<CMD>Lazy sync<CR>", { desc = "lazy sync plugins" })
 map("n", "<leader>li", "<CMD>Lazy install<CR>", { desc = "lazy install missing plugins" })
