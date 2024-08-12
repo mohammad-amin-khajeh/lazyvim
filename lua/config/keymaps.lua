@@ -8,9 +8,6 @@ local map = vim.keymap.set
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 
--- quit like a normal text editor
-map({ "n", "i", "v" }, "<C-q>", "<CMD>qa!<CR>")
-
 -- append the next line to the current line but don't change cursor position
 map("n", "J", function()
   local pos = vim.fn.getcurpos()
