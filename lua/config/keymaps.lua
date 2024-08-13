@@ -57,5 +57,9 @@ map("n", "<leader>lh", "<CMD>Lazy home<CR>", { desc = "lazy open" })
 map("n", "<s-left>", "<cmd>bp<cr>")
 map("n", "<s-right>", "<cmd>bn<cr>")
 
+-- arrange buffers
+map("n", "<C-S-Left>", "<cmd>BufferLineMovePrev<cr>", { desc = "move buffer to the left" })
+map("n", "<C-S-Right>", "<cmd>BufferLineMoveNext<cr>", { desc = "move buffer to the right" })
+
 -- close buffers easier
 map("n", "<a-x>", "<cmd>bdelete<cr>")
