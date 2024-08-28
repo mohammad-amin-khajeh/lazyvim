@@ -23,6 +23,13 @@ return {
   },
 
   {
+    "windwp/nvim-ts-autotag",
+    event = function()
+      return "InsertEnter"
+    end,
+  },
+
+  {
     "akinsho/bufferline.nvim",
     event = function()
       return "BufAdd"
