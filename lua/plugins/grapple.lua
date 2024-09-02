@@ -9,8 +9,8 @@ return {
       status = true,
     },
     keys = {
-      { "<leader>a", "<cmd>Grapple toggle<cr>", desc = "grapple toggle a file" },
-      { "<C-e>", "<cmd>Grapple toggle_tags<cr>", desc = "grapple toggle tags menu" },
+      { "<leader>a", "<cmd>Grapple toggle<cr>", desc = "toggle grappling a file" },
+      { "<C-e>", "<cmd>Grapple toggle_tags<cr>", desc = "toggle grapple tags menu" },
 
       {
         "<leader>1",
