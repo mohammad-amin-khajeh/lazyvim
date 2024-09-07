@@ -28,8 +28,8 @@ map("n", "-", "0")
 map("n", "<leader>fx", '<CMD>!chmod +x "%"<CR>', { desc = "make file execultable" })
 
 -- some emacs bindings in insert mode
-map("i", "<C-a>", "<esc>I")
-map("i", "<C-e>", "<esc>A")
+map("i", "<C-a>", "<C-o>^")
+map("i", "<C-e>", "<C-o>$")
 
 -- save like a normal text editor
 map("i", "<C-s>", "<CMD>w<CR>")
