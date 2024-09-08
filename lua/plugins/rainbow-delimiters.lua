@@ -1,7 +1,7 @@
 return {
   {
     "hiphish/rainbow-delimiters.nvim",
-    event = "BufReadPost",
+    lazy = false,
     config = function()
       require("rainbow-delimiters.setup").setup({
         highlight = {
