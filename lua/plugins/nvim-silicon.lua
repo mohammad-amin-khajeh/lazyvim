@@ -18,8 +18,10 @@ return {
         return vim.bo.filetype
       end,
       output = function()
-        return "/home/mmd/Pictures/Code/"
-          .. vim.api.nvim_buf_get_name(0):match(".+/(.+)%.+")
+        local home = os.getenv("HOME")
+        return home
+          .. "/Pictures/Code/"
+          .. vim.fn.expand("%:p:t")
           .. " "
           .. os.date("!%Y-%m-%dT%H-%M-%S")
           .. "_code.png"
