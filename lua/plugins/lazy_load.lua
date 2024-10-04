@@ -1,13 +1,6 @@
 return {
 
   {
-    "gbprod/yanky.nvim",
-    event = function()
-      return {}
-    end,
-  },
-
-  {
     "echasnovski/mini.ai",
     event = function()
       return "InsertEnter"
