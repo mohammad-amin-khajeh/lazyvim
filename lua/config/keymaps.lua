@@ -54,8 +54,8 @@ map("n", "<leader>ll", "<CMD>Lazy log<CR>", { desc = "lazy view log" })
 map("n", "<leader>lh", "<CMD>Lazy home<CR>", { desc = "lazy open" })
 
 -- use arrow keys for buffer navgiation
-map("n", "<s-left>", "<cmd>bp<cr>")
-map("n", "<s-right>", "<cmd>bn<cr>")
+map("n", "<S-left>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
+map("n", "<S-right>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 
 -- close buffers easier
 map("n", "<a-x>", "<cmd>bdelete<cr>")
