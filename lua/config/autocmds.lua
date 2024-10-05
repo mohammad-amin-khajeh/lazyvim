@@ -15,8 +15,8 @@ vim.api.nvim_create_user_command("ZolaFrontmatter", function()
   local current_date = os.date("%Y-%m-%d")
   vim.api.nvim_buf_set_lines(0, 0, 0, false, {
     "+++",
-    "title = ''",
-    "description = ''",
+    'title = ""',
+    'description = ""',
     "date = " .. '"' .. current_date .. '"',
     "[extra]",
     "[taxonomies]",
