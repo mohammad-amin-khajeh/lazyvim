@@ -5,9 +5,10 @@ return {
       ensure_installed = {
         "bash-language-server",
         "biome",
-        "clangd",
         "clang-format",
+        "clangd",
         "css-lsp",
+        "emmet-language-server",
         "html-lsp",
         "json-lsp",
         "lua-language-server",
