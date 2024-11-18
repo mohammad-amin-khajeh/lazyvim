@@ -28,7 +28,7 @@ return {
         },
 
         documentation = {
-          auto_show_delay_ms = 100,
+          auto_show_delay_ms = 300,
         },
       },
     },
