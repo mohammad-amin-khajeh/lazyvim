@@ -9,11 +9,6 @@ return {
         preset = "enter",
         ["<C-e>"] = { "hide", "fallback" },
       },
-      windows = {
-        documentation = {
-          auto_show_delay_ms = 200,
-        },
-      },
     },
   },
 }
