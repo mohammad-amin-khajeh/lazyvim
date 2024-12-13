@@ -13,3 +13,6 @@ vim.opt.wrap = true
 
 -- don't show the last command
 vim.opt.showcmd = false
+
+-- disable snacks animations
+vim.g.snacks_animate = false
