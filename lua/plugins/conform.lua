@@ -4,6 +4,7 @@ return {
     opts = {
       formatters_by_ft = {
         c = { "clang-format" },
+        java = { "clang-format" },
         javascript = { "biome" },
         json = { "biome" },
         lua = { "stylua" },
