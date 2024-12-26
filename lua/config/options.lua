@@ -16,3 +16,6 @@ vim.opt.showcmd = false
 
 -- disable snacks animations
 vim.g.snacks_animate = false
+
+-- Fix snacks terminal changing cursor's position
+vim.opt.splitkeep = "cursor"
