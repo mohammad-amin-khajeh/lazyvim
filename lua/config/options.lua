@@ -5,9 +5,6 @@
 -- scroll off value
 vim.opt.scrolloff = 12
 
--- disable swap file
-vim.opt.swapfile = true
-
 -- line wrapping
 vim.opt.wrap = true
 
