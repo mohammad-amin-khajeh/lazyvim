@@ -34,9 +34,6 @@ map("i", "<C-e>", "<C-o>$")
 -- save like a normal text editor
 map("i", "<C-s>", "<CMD>w<CR>")
 
--- get out of terminal mode
-map("t", "<esc><esc>", "<C-\\><C-n>", { desc = "Terminal mode close" })
-
 -- search forward for the word under the cursor
 map("n", "<a-g>", "*zz")
 
