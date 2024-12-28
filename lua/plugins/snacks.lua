@@ -6,6 +6,9 @@ return {
       terminal = {
         position = "float",
       },
+      zen = {
+        backdrop = { transparent = false },
+      },
     },
   },
 }
