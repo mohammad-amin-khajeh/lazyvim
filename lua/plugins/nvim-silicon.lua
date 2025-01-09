@@ -7,15 +7,16 @@ return {
 
     opts = {
       font = "CaskaydiaCove NF=32",
-      theme = "OneHalfLight",
-      background = "#fdd",
-      pad_horiz = 100,
-      pad_vert = 130,
+      theme = "Dracula",
+      pad_horiz = 300,
+      pad_vert = 250,
       no_line_number = true,
       gobble = true,
-      shadow_blur_radius = 20,
       language = function()
         return vim.bo.filetype
+      end,
+      window_title = function()
+        return vim.fn.fnamemodify(vim.api.nvim_buf_get_name(vim.api.nvim_get_current_buf()), ":t")
       end,
       output = function()
         local home = os.getenv("HOME")
