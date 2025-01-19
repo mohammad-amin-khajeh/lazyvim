@@ -22,5 +22,11 @@
     "body": [
       "{{video(src='${1}' muted=${2:false} autoplay=${3:true})}}"
     ]
+  },
+  "linked image shortcode": {
+    "prefix": "put_image",
+    "body": [
+      "{{put_image(url='${1}' caption='${2}' width='${3:700}')}}"
+    ]
   }
 }
