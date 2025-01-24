@@ -8,6 +8,7 @@ return {
         "bash",
         "c",
         "css",
+        "cue",
         "html",
         "htmldjango",
         "javascript",
