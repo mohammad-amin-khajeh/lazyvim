@@ -33,3 +33,11 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "bufRead" }, {
     vim.b.autoformat = false
   end,
 })
+
+-- enable sxhkdrc syntax highlighting
+vim.api.nvim_create_autocmd({ "BufNewFile", "bufRead" }, {
+  pattern = { "*sxhkdrc" },
+  callback = function()
+    vim.bo.ft = "sxhkdrc"
+  end,
+})
