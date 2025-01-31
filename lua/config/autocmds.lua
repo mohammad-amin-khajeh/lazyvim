@@ -26,14 +26,6 @@ vim.api.nvim_create_user_command("ZolaFrontmatter", function()
   })
 end, {})
 
--- disable auto formatting on save for c header files, can be enabled with <leader>uf
-vim.api.nvim_create_autocmd({ "BufNewFile", "bufRead" }, {
-  pattern = { "*.h" },
-  callback = function()
-    vim.b.autoformat = false
-  end,
-})
-
 -- enable sxhkdrc syntax highlighting
 vim.api.nvim_create_autocmd({ "BufNewFile", "bufRead" }, {
   pattern = { "*sxhkdrc" },
