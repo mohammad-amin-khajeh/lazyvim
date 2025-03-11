@@ -19,6 +19,7 @@ vim.api.nvim_create_user_command("ZolaFrontmatter", function()
     'description = ""',
     "date = " .. '"' .. current_date .. '"',
     "[extra]",
+    "toc = false",
     "[taxonomies]",
     "tags = []",
     "categories = []",
