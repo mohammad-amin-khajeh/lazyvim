@@ -1,0 +1,8 @@
+{
+  "forrr": {
+    "prefix": "forrr",
+    "body": [
+      "for ${1:i} in reversed(range(len(${2}))):\n\t"
+    ]
+  }
+}
