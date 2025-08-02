@@ -2,6 +2,11 @@ return {
   "folke/snacks.nvim",
   ---@type snacks.Config
   opts = {
+
+    terminal = {
+      shell = "zsh",
+    },
+
     styles = {
 
       -- make terminal float
