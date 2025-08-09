@@ -1,6 +1,9 @@
 return {
   "folke/snacks.nvim",
   ---@type snacks.Config
+
+  keys = { { "<leader>e", false } },
+
   opts = {
 
     terminal = {
