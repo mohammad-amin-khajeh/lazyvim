@@ -7,3 +7,7 @@
 - First back up your `~/.config/nvim` and delete the original and then run: `git clone https://github.com/mohammad-amin-khajeh/lazyvim ~/.config/nvim`
 - back up `~/.local/share/nvim` and `~/.local/state/nvim` just in case.
 - Lastly, enter neovim and voila:)
+
+> [!NOTE]
+> This repo will (probably) recieve no update and I'm not archiving it just in case.
+> Check out my [new config](https://github.com/mohammad-amin-khajeh/nvim) from scratch.
