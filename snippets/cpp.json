@@ -1,0 +1,50 @@
+{
+  "cpp template": {
+    "prefix": "cp",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "",
+      "using namespace std;",
+      "typedef long long ll;",
+      "typedef unsigned long long ull;",
+      "typedef long double ld;",
+      "typedef vector<int> vi;",
+      "typedef vector<ll> vll;",
+      "typedef vector<vi> vvi;",
+      "typedef vector<vll> vvll;",
+      "typedef pair<int, int> pii;",
+      "typedef pair<ll, ll> pll;",
+      "typedef vector<pii> vpii;",
+      "typedef vector<pll> vpll;",
+      "typedef set<int> si;",
+      "typedef set<ll> sll;",
+      "typedef map<int, int> mii;",
+      "typedef map<ll, ll> mll;",
+      "#define endl \"\\n\";",
+      "#define rep(i, a, b, step) for (int i = (a); i < (b); i += step)",
+      "#define rev(i, a, b, step) for (int i = (a); i >= (b); i -= step)",
+      "#define sz(v) ((int)(v).size())",
+      "#define F first;",
+      "#define S second;",
+      "#define PB push_back;",
+      "#define MP make_pair;",
+      "",
+      "int main() {",
+      "  ios::sync_with_stdio(0);",
+      "  cin.tie(0);",
+      "",
+      "  $0",
+      "",
+      "  return 0;",
+      "}"
+    ],
+    "description": "Competitive Programming template"
+  },
+  "print line": {
+    "prefix": "coutl",
+    "body": [
+      "cout << $0 << endl;"
+    ],
+    "description": "cout and endl line"
+  }
+}

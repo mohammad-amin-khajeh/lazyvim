@@ -14,5 +14,9 @@ vim.opt.showcmd = false
 -- disable snacks animations
 vim.g.snacks_animate = false
 
--- Fix snacks terminal changing cursor's position
-vim.opt.splitkeep = "cursor"
+-- show the live result of substitutions in a new buffer
+vim.o.inccommand = "split"
+
+vim.diagnostic.config({
+  float = { border = "rounded", source = true },
+})
