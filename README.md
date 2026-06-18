@@ -7,3 +7,4 @@
 - First back up your `~/.config/nvim` and then run: `git clone https://github.com/mohammad-amin-khajeh/lazyvim ~/.config/nvim`
 - back up `~/.local/share/nvim` and `~/.local/state/nvim` just in case.
 - Lastly, enter neovim and voila:)
+- for more info, visit [lazyvim.org](https://www.lazyvim.org/)
