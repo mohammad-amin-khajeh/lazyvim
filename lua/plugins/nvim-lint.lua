@@ -5,7 +5,7 @@ return {
     opts = {
       linters = {
         ["markdownlint-cli2"] = {
-          args = { "--config", CONFIG_DIR .. "/lazyvim/lua/config/.markdownlint-cli2.yaml", "--" },
+          args = { "--config", CONFIG_DIR .. "/nvim/lua/config/.markdownlint-cli2.yaml", "--" },
         },
       },
     },

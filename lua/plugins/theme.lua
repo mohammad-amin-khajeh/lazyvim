@@ -11,4 +11,10 @@ return {
     "HiPhish/rainbow-delimiters.nvim",
     lazy = false,
   },
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = {
+      options = { component_separators = "|", section_separators = "" },
+    },
+  },
 }

@@ -44,13 +44,6 @@ return {
   },
 
   {
-    "nvim-mini/mini.pairs",
-    event = function()
-      return "InsertEnter"
-    end,
-  },
-
-  {
     "nvim-mini/mini.files",
     opts = {
       mappings = {
