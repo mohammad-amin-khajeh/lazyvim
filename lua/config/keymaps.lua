@@ -37,8 +37,8 @@ map("i", "<C-e>", "<C-o>$")
 
 map("n", "<a-g>", "*zz", { desc = "search forward for the word under cursor" })
 map("n", "<a-f>", "#zz", { desc = "search backward for the word under cursor" })
-map({ "n", "x" }, "#", "%")
-map({ "n", "x" }, "%", "%:echo 'use # instead!!!'<CR>")
+map({ "n", "x", "o" }, "#", "%")
+map({ "n", "x", "o" }, "%", "%:echo 'use # instead!!!'<CR>")
 
 -- lazy
 map("n", "<leader>lu", "<CMD>Lazy update<CR>", { desc = "lazy update plugins" })
