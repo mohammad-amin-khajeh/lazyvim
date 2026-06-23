@@ -1,0 +1,11 @@
+{
+  "xor swap": {
+    "prefix": "xorswap",
+    "body": [
+      "${1:a}^=${2:b};",
+      "${2:b}^=${1:a};",
+      "${1:a}^=${2:b};"
+    ],
+    "description": "swap two variables without a temporary third variable"
+  }
+}
