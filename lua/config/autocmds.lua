@@ -117,10 +117,24 @@ vim.api.nvim_create_autocmd("BufEnter", {
   end,
 })
 
--- show diagnostics' message only for the current line
+-- show diagnostics messages only for the current line
 vim.api.nvim_create_autocmd("LspAttach", {
   group = my_group,
   callback = function()
     vim.diagnostic.config({ virtual_text = { current_line = true }, virtual_lines = false })
+  end,
+})
+
+-- disable autoformat in suckless projects
+---@diagnostic disable-next-line: assign-type-mismatch
+vim.api.nvim_create_autocmd({ "bufRead" }, {
+  group = my_group,
+  pattern = {
+    vim.fn.expand("~/.local/src") .. "/**",
+    vim.fn.expand("~/.dotfiles/suckless") .. "/**",
+  },
+
+  callback = function()
+    vim.b.autoformat = false
   end,
 })
