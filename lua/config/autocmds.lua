@@ -68,18 +68,28 @@ function Quickrun(cmd_generator, pattern)
     pattern = pattern,
     callback = function()
       if os.getenv("TMUX") then
-        vim.keymap.set("n", "<leader>cq", function()
-          local cmd = cmd_generator()
-          if not cmd then
-            return
-          end
+        local keymaps = {
+          { "<leader>cq", { "-h", "-l", "40%" }, "quickrun file vert" },
+          { "<leader>cQ", { "-v", "-l", "30%" }, "quickrun file right" },
+        }
 
-          vim.system({ "tmux", "splitw", "-h", "-l", "40%", "-d", cmd }, { text = true }, function(out)
-            if out.code ~= 0 then
-              vim.notify("Tmux error: " .. (out.stderr or "unknown error"), vim.log.levels.ERROR)
+        for _, km in ipairs(keymaps) do
+          vim.keymap.set("n", km[1], function()
+            local cmd = cmd_generator()
+            if not cmd then
+              return
             end
-          end)
-        end, { desc = "quickrun file", buffer = 0 })
+            local args = { "tmux", "splitw" }
+            vim.list_extend(args, km[2])
+            vim.list_extend(args, { "-d", cmd })
+
+            vim.system(args, { text = true }, function(out)
+              if out.code ~= 0 then
+                vim.notify("Tmux error: " .. (out.stderr or "unknown error"), vim.log.levels.ERROR)
+              end
+            end)
+          end, { desc = km[3], buffer = 0 })
+        end
       end
     end,
   })
